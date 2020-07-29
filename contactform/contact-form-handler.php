@@ -3,6 +3,7 @@ $errors = '';
 $myemail = 'yourname@website.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
+   empty($_POST['subject'])||
    empty($_POST['message']))
 {
     $errors .= "\n Error: all fields are required";
@@ -10,6 +11,7 @@ if(empty($_POST['name'])  ||
 
 $name = $_POST['name']; 
 $email_address = $_POST['email']; 
+$email_subject = $_POST['subject'];
 $message = $_POST['message']; 
 
 if (!preg_match(
