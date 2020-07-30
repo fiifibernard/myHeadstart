@@ -1,8 +1,19 @@
+<<<<<<< HEAD
 <?php 
 $errors = '';
 $myemail = 'phiifibernard@gmail.com';//<-----Put Your email address here.
 
 if(empty($_POST['name'])  || empty($_POST['email']) || empty($_POST['message'])){
+=======
+  <?php 
+$errors = '';
+$myemail = 'yourname@website.com';//<-----Put Your email address here.
+if(empty($_POST['name'])  || 
+   empty($_POST['email']) || 
+   empty($_POST['subject'])||
+   empty($_POST['message']))
+{
+>>>>>>> 38a0944fb40e9e8b382b363431c227f5f518589e
     $errors .= "\n Error: all fields are required";
 }
 
@@ -11,11 +22,18 @@ $email_address = $_POST['email'];
 $email_subject = $_POST['subject'];
 $message = $_POST['message']; 
 
+<<<<<<< HEAD
 if (!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email_address))
+=======
+if (!preg_match(
+"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
+$email_address))
+>>>>>>> 38a0944fb40e9e8b382b363431c227f5f518589e
 {
     $errors .= "\n Error: Invalid email address";
 }
 
+<<<<<<< HEAD
 
 //Emailing the form data to my mail
 if( empty($errors)){
@@ -30,6 +48,21 @@ if( empty($errors)){
 	mail($to,$subject,$email_body,$headers);
 	//redirect to the 'thank you' page
 	header('contact-form-thank-you.html');
+=======
+if( empty($errors))
+{
+	$to = $myemail; 
+	$email_subject = "Contact form submission: $name";
+	$email_body = "You have received a new message. ".
+	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
+	
+	$headers = "From: $myemail\n"; 
+	$headers .= "Reply-To: $email_address";
+	
+	mail($to,$email_subject,$email_body,$headers);
+	//redirect to the 'thank you' page
+	header('Location: contact-form-thank-you.html');
+>>>>>>> 38a0944fb40e9e8b382b363431c227f5f518589e
 } 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
