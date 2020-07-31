@@ -67,72 +67,41 @@
         <!--/.nav-collapse -->
       </div>
     </div>
-    <div class="container">
-      <div class="imagebg"></div>
-      <div class="row" style="margin-top: 50px;">
-        <div class="col-md-6 col-md-offset-3 form-container">
-          <h2>Feedback</h2>
-          <p>Please provide your feedback below:</p>
-          <form role="form" method="post" id="reused_form">
-            <div class="row">
-              <div class="col-sm-12 form-group">
-                <label>How do you rate your overall experience?</label>
-                <p>
-                  <label class="radio-inline">
-                    <input
-                      type="radio"
-                      name="experience"
-                      id="radio_experience"
-                      value="bad"
-                    />
-                    Bad
-                  </label>
-                  <label class="radio-inline">
-                    <input
-                      type="radio"
-                      name="experience"
-                      id="radio_experience"
-                      value="average"
-                    />
-                    Average
-                  </label>
-                  <label class="radio-inline">
-                    <input
-                      type="radio"
-                      name="experience"
-                      id="radio_experience"
-                      value="good"
-                    />
-                    Good
-                  </label>
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 form-group">
-                <label for="email"> Email:</label>
+    <div class="container pt">
+      <div class="row mt">
+        <div class="col-lg-6 col-lg-offset-3 centered">
+          <h3>CONTACT ME</h3>
+          <hr />
+          <p>Kindly fill in your details and will reach out to you asap!</p>
+        </div>
+      </div>
+      <div class="row mt">
+        <div class="col-lg-8 col-lg-offset-2">
+          <form class="contact-form php-mail-form" role="form" method="post" id="reused_form" action="php-email-form-script/handler.php">
+           
+    
+              <div class="form-group">
                 <input
                   type="email"
                   class="form-control"
                   id="email"
+                  placeholder="Email"
                   name="email"
                   required
                 />
-              </div>
             </div>
-            <div class="row">
-              <div class="col-sm-6 form-group">
-                <label for="name"> Your Name:</label>
+           
+              <div class="form-group">
+                
                 <input
                   type="text"
                   class="form-control"
                   id="name"
+                  placeholder="Name"
                   name="name"
                   required
                 />
               </div>
-            </div>
-            <div class="row">
               <div class="col-sm-6 form-group">
                 <label for="comments"> Message:</label>
                 <textarea
