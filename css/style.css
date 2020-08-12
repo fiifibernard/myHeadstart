@@ -7,7 +7,7 @@
 
 body {
   background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #555;
@@ -17,8 +17,13 @@ body {
 
 /* Titles */
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #333;
 }
@@ -53,13 +58,15 @@ a {
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-a:hover, a:focus  {
+a:hover,
+a:focus {
   color: #7b7b7b;
   text-decoration: none;
   outline: 0;
 }
 
-a:before, a:after {
+a:before,
+a:after {
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
   -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -85,7 +92,7 @@ hr {
   padding: 15px 0;
 }
 
-@media (max-width: 768px ) {
+@media (max-width: 768px) {
   .navbar-inverse {
     padding: 15px 0;
   }
@@ -95,12 +102,11 @@ hr {
   border-color: #3963e2;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav > li > a {
   color: white;
-  
 }
 
-.navbar-collapse .navbar-nav>li>a:hover {
+.navbar-collapse .navbar-nav > li > a:hover {
   color: #222222;
   background-color: white;
   border-bottom-left-radius: 20%;
@@ -134,8 +140,8 @@ hr {
 }
 
 .pt {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 .col-lg-4:last-child i {
@@ -145,7 +151,7 @@ hr {
 /* +++++ WRAP SECTIONS +++++ */
 
 #main-content {
-  padding-top: 70px; 
+  padding-top: 70px;
   padding-bottom: 70px;
   background-color: #f2f2f2;
 }
@@ -166,21 +172,19 @@ hr {
   padding-bottom: 8px;
 }
 #footer a {
-  color:#fff;
+  color: #fff;
 }
 
-#footer .col-lg-4:nth-child(2)>p>a:first-child:hover{
+#footer .col-lg-4:nth-child(2) > p > a:first-child:hover {
   color: rgb(193, 53, 132);
 }
 
-#footer .col-lg-4:nth-child(2)>p>a:nth-child(3):hover{
+#footer .col-lg-4:nth-child(2) > p > a:nth-child(3):hover {
   color: #3dbff3;
 }
-#footer .col-lg-4:nth-child(2)>p>a:last-child:hover{
+#footer .col-lg-4:nth-child(2) > p > a:last-child:hover {
   color: #3b5998;
 }
-
-
 
 /* +++++ Color Wraps / Blog Page +++++ */
 
@@ -217,7 +221,6 @@ ba {
 .bq {
   font-size: 22px;
   padding-top: 30px;
-  
 }
 
 /* 
@@ -276,13 +279,15 @@ bt {
   padding: 40px 0;
 }
 
-.contact-form {}
+.contact-form {
+}
 
 .contact-form label {
   color: #999;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   padding: 10px 12px;
   border-radius: 0;
   box-shadow: none;
