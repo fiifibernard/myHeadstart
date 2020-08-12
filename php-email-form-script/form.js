@@ -40,7 +40,7 @@ $(function () {
 
     $.ajax({
       type: "POST",
-      url: "contact-form-handler.php",
+      url: "php-email-form-handler/contact-form-handler.php",
       data: $form.serialize(),
       success: after_form_submitted,
       dataType: "json",
