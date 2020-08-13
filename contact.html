@@ -72,21 +72,21 @@
         <form
           class="contact-form php-mail-form"
           role="form"
-          id="reused_form"
-          action="php-email-form-script/contact-form-handler.php"
+          id="contact-form"
+          action="php-email-form-script/form-handler.php"
           method="POST"
         >
           <div class="form-group">
             <input
-              type="name"
+              type="text"
               name="name"
               class="form-control"
               id="contact-name"
               placeholder="Your Name"
               data-rule="minlen:4"
               data-msg="Please enter at least 4 chars"
+              required
             />
-            <div class="validate"></div>
           </div>
           <div class="form-group">
             <input
@@ -97,21 +97,20 @@
               placeholder="Your Email"
               data-rule="email"
               data-msg="Please enter a valid email"
+              required
             />
-            <div class="validate"></div>
           </div>
           <div class="form-group">
             <input
               type="text"
-              for="subject"
               name="subject"
               class="form-control"
               id="contact-subject"
               placeholder="Subject"
               data-rule="minlen:4"
               data-msg="Please enter at least 8 chars of subject"
+              required
             />
-            <div class="validate"></div>
           </div>
           <div class="form-group">
             <textarea
@@ -123,15 +122,9 @@
               rows="5"
               data-rule="required"
               data-msg="Please write something for us"
+              required
             ></textarea>
-            <div class="validate"></div>
           </div>
-
-          <!-- <div class="loading"></div>
-          <div class="error-message"></div>
-          <div class="sent-message">
-            Your message has been sent. Thank you!
-          </div> -->
 
           <div class="form-send">
             <button type="submit" class="btn btn-large">Send Message</button>
@@ -147,8 +140,7 @@
           id="error_message"
           style="width: 100%; height: 100%; display: none;"
         >
-          <h3>Error</h3>
-          Sorry there was an error sending your form.
+          <h3>Sorry there was an error sending your form.</h3>
         </div>
       </div>
     </div>
@@ -221,11 +213,11 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    <script src="scripts/gen_validatorv31.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
-    <script src="php-email-form-script/form.js"></script>
+    <script src="php-email-form-script/form-validate.js"></script>
   </body>
 </html>
