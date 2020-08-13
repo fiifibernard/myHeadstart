@@ -37,7 +37,7 @@ if (!empty($_POST)) {
         $body = join(PHP_EOL, $bodyParagraphs);
 
         if (mail($toEmail, $emailSubject, $body, $headers)) {
-            header('');
+            header('thankyou.html');
         } else {
             $errorMessage = 'Oops, something went wrong. Please try again later';
         }
