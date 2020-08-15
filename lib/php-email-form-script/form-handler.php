@@ -30,7 +30,7 @@ if (!empty($_POST)) {
 
     if (empty($errors)) {
         $toEmail = 'phiifibernard@gmail.com';
-        $emailSubject = "New email from your your website: $subject";
+        $emailSubject = "New email from your website:" .$subject;
         $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
 
         $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
