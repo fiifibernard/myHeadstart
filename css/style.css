@@ -104,13 +104,14 @@ hr {
 
 .navbar-inverse .navbar-nav > li > a {
   color: white;
+  transition: all 1s ease-in-out;
 }
 
 .navbar-collapse .navbar-nav > li > a:hover {
   color: #222222;
   background-color: white;
-  border-bottom-left-radius: 20%;
-  border-top-right-radius: 20%;
+  border-radius: 10%;
+  transform: scale(1.1);
 }
 
 .navbar-brand {
