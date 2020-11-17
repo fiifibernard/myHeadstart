@@ -111,7 +111,7 @@ hr {
   color: #222222;
   background-color: white;
   border-radius: 10%;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 .navbar-brand {
