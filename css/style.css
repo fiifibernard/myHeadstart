@@ -6,7 +6,7 @@
 */
 
 body {
-  background-color: #ffffff;
+  background-color: #B4BBC7;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -148,7 +148,12 @@ hr {
 .col-lg-4:last-child i {
   text-align: left;
 }
-
+/* Main Content */
+.container img{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
 /* +++++ WRAP SECTIONS +++++ */
 
 #main-content {
