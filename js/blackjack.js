@@ -108,7 +108,7 @@ function bustCheck(playerTurn) {
 
 function showCard(selectedCard, playerTurn) {
   let cardImage = document.createElement("img");
-  cardImage.src = `../img/bjimages/${selectedCard}.png`;
+  cardImage.src = `img/bjimages/${selectedCard}.png`;
   if (playerTurn["score"] <= 21) {
     document.querySelector(playerTurn["div"]).appendChild(cardImage);
   }
