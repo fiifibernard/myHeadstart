@@ -76,7 +76,9 @@
   border: 1px black solid;
   padding: 5px;
 }
-
+.flex-blackjack-row-2 #hit-button{
+  width: 35%;
+}
 @media screen and (min-width: 1000px){
   .flex-blackjack-row-1 div{
     height: 470px;
