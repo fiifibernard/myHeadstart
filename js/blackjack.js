@@ -69,13 +69,9 @@ async function blackjackStand() {
         blackjackgame.isBust === false) {
     
     while (DEALER.score < 18) {
-        if(!(document
-            .querySelector("#reset-button")
-            .addEventListener("click", blackjackReset))){
                 outcome(DEALER); //{'div': '#dealer-box', 'spanScore': '#dealer-results', 'score': 0}
                 bustCheck(DEALER);
                 await sleep(1000);
-        }
     }
     showResults(computeWinner());
     blackjackgame.isStand = true;
@@ -193,7 +189,7 @@ function resetFuntion() {
   YOU.score = 0;
   DEALER.score = 0;
 
-  blackjackgame.isBust = false;
+  blackjackgame.isHit = false;
   blackjackgame.isStand = false;
   blackjackgame.turnsOver = false;
   blackjackgame.isBust = false;
