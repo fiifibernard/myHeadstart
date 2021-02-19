@@ -39,21 +39,24 @@
   color: white;
 }
 
+
 .flex-blackjack-row-1 img {
   padding: 10px;
   width: 30%;
+ 
 }
-
-
-
-
-
-
+@media screen and (min-width: 1300px){
+  .flex-blackjack-row-1  {
+    height: 500px;
+  }
+}
 
 @media screen and (max-width: 500px){
   .flex-blackjack-row-1 img {
     padding: 10px;
-    width: 50%;
+    width: 30%;
+    
+    
   }
   .flex-blackjack-row-1  h2{
    font-size: 20px;
@@ -74,6 +77,11 @@
   padding: 5px;
 }
 
+@media screen and (min-width: 1000px){
+  .flex-blackjack-row-1 div{
+    height: 470px;
+  }
+}
 table,
 th,
 td {
