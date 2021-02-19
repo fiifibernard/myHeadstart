@@ -167,6 +167,7 @@ function showResults(winner) {
   } else {
     message = "You Drew!";
     messagecolor = "yellow";
+    lostSound.play();
     document.querySelector("#draws").textContent = blackjackgame["draws"];
   }
 
