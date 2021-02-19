@@ -42,7 +42,15 @@
 .flex-blackjack-row-1 img {
   padding: 10px;
   width: 30%;
-}@media screen and (max-width: 500px){
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
   .flex-blackjack-row-1 img {
     padding: 10px;
     width: 50%;

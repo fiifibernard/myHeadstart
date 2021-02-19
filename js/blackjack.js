@@ -65,15 +65,21 @@ function blackjackHit() {
 }
 
 async function blackjackStand() {
-  if (blackjackgame.isHit === true && blackjackgame.isBust === false) {
-    blackjackgame.turnsOver = true;
+  if (blackjackgame.isHit === true && 
+        blackjackgame.isBust === false) {
+    
     while (DEALER.score < 18) {
-      outcome(DEALER); //{'div': '#dealer-box', 'spanScore': '#dealer-results', 'score': 0}
-      bustCheck(DEALER);
-      await sleep(1000);
+        if(!(document
+            .querySelector("#reset-button")
+            .addEventListener("click", blackjackReset))){
+                outcome(DEALER); //{'div': '#dealer-box', 'spanScore': '#dealer-results', 'score': 0}
+                bustCheck(DEALER);
+                await sleep(1000);
+        }
     }
     showResults(computeWinner());
     blackjackgame.isStand = true;
+    blackjackgame.turnsOver = true;
   }
 }
 
