@@ -44,10 +44,10 @@ var myStr = JSON.stringify(blackjackgame);
 const YOU = blackjackgame.you;
 const DEALER = blackjackgame.dealer;
 
-const hitSound = new Audio("../sounds/swish.m4a");
-const bustSound = new Audio("../sounds/bust.mp3");
-const winSound = new Audio("../sounds/cash.mp3");
-const lostSound = new Audio("../sounds/aww.mp3");
+const hitSound = new Audio("sounds/swish.m4a");
+const bustSound = new Audio("sounds/bust.mp3");
+const winSound = new Audio("sounds/cash.mp3");
+const lostSound = new Audio("sounds/aww.mp3");
 
 function blackjackHit() {
   if (
